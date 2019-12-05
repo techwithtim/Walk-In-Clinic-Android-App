@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hours">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="Set Clinic Hours"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="461dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1303"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:text="Sunday"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        O<TextView
+                            android:id="@+id/textView14s4"
+                            android:layout_width="81dp"
+                            android:layout_height="74dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Open"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/sundayOpening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+
+                        <ToggleButton
+                            android:id="@+id/closedSunday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Status"
+                            android:textOff="Closed"
+                            android:textOn="Open"
+                            android:textSize="7.5sp" />
+                        />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="200dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textsView1s5"
+                            android:layout_width="81dp"
+                            android:layout_height="71dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Close"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/sundayClosing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:text="Monday"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView140"
+                            android:layout_width="81dp"
+                            android:layout_height="74dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Open"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/mondayOpening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+
+                        <ToggleButton
+                            android:id="@+id/closedMonday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Status"
+                            android:textOff="Closed"
+                            android:textOn="Open"
+                            android:textSize="7.5sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="200dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView150"
+                            android:layout_width="81dp"
+                            android:layout_height="71dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="End"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/mondayClosing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView130"
+                        android:layout_width="410dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:text="Tuesday"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView144"
+                            android:layout_width="81dp"
+                            android:layout_height="74dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Open"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+
+                        <TimePicker
+                            android:id="@+id/tuesdayOpening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+
+                        <ToggleButton
+                            android:id="@+id/closedTuesday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Status"
+                            android:textOff="Closed"
+                            android:textOn="Open"
+                            android:textSize="7.5sp" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="200dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textsView15"
+                            android:layout_width="81dp"
+                            android:layout_height="71dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Close"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/tuesdayClosing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView133"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:text="Wednesday"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView1444"
+                            android:layout_width="81dp"
+                            android:layout_height="74dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Open"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/wednesdayOpening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+
+                        <ToggleButton
+                            android:id="@+id/closedWednesday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Status"
+                            android:textOff="Closed"
+                            android:textOn="Open"
+                            android:textSize="7.5sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="200dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textssView15"
+                            android:layout_width="81dp"
+                            android:layout_height="71dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Close"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/wednesdayClosing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:text="Thursday"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="81dp"
+                            android:layout_height="74dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Open"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/thursdayOpening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+
+                        <ToggleButton
+                            android:id="@+id/closedThursday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Status"
+                            android:textOff="Closed"
+                            android:textOn="Open"
+                            android:textSize="7.5sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="200dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="81dp"
+                            android:layout_height="71dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Close"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/thursdayClosing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView1330"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:text="Friday"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView14ss4"
+                            android:layout_width="81dp"
+                            android:layout_height="74dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Open"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/fridayOpening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+
+                        <ToggleButton
+                            android:id="@+id/closedFriday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Status"
+                            android:textOff="Closed"
+                            android:textOn="Open"
+                            android:textSize="7.5sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="200dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textsView1ss5"
+                            android:layout_width="81dp"
+                            android:layout_height="71dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Close"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/fridayClosing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="174dp"
+                    android:layout_weight="0"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView13s0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:text="Saturday"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textSize="20sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViews144"
+                            android:layout_width="81dp"
+                            android:layout_height="74dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Open"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/saturdayOpening"
+                            android:layout_width="wrap_content"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+
+                        <ToggleButton
+                            android:id="@+id/closedSaturday"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Status"
+                            android:textOff="Closed"
+                            android:textOn="Open"
+                            android:textSize="7.5sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:minHeight="200dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textsView1s55"
+                            android:layout_width="81dp"
+                            android:layout_height="71dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:text="Close"
+                            android:textColor="#000000"
+                            android:textSize="18sp" />
+
+                        <TimePicker
+                            android:id="@+id/saturdayClosing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:timePickerMode="spinner" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#634D72"
+        android:text="Save" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <Button
+        android:id="@+id/backButton1"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#9AA4DA"
+        android:text="Back"
+        android:textColor="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <Button
+        android:id="@+id/infoButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/info_button" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="162dp" />
+
+</LinearLayout>

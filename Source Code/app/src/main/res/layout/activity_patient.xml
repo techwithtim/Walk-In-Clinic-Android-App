@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0."
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/configProfile"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="Welcome Patient"
+                android:textColor="@android:color/black"
+                android:textSize="26sp"
+                app:fontFamily="sans-serif-smallcaps" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="128dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="124dp"
+                    android:layout_height="124dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/logo3" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center"
+                android:text="Welcome ____, you are logged in as patient."></TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bookButton"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#634D72"
+            android:text="Book/Check In"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="29dp" />
+
+        <Button
+            android:id="@+id/appointmentBtn"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#634D72"
+            android:text="View Appointments"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/signoutButton"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#9AA4DA"
+            android:text="Sign Out"
+            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

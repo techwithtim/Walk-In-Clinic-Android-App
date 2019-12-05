@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckIn">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0."
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Filters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Filters"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                app:fontFamily="sans-serif-smallcaps" />
+
+            <EditText
+                android:id="@+id/nameField2"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/teamNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Clinic Name" />
+
+            <EditText
+                android:id="@+id/addressField"
+                android:layout_width="274dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textPersonName"
+                android:singleLine="true"
+                android:text="Clinic Address" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" /><![CDATA[
+
+
+
+            />
+
+        ]]>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <TextView
+            android:id="@+id/AvailableDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Days of Operation"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/sundayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:checked="false"
+                android:text="Sunday" />
+
+            <CheckBox
+                android:id="@+id/mondayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+
+                android:checked="false"
+                android:text="Monday" />
+
+            <CheckBox
+                android:id="@+id/tuesdayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:checked="false"
+                android:text="Tuesday" />
+
+            <CheckBox
+                android:id="@+id/wednesdayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:checked="false"
+                android:text="Wednesday" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0."
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/thursdayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:checked="false"
+                android:text="Thursday" />
+
+            <CheckBox
+                android:id="@+id/fridayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+
+                android:checked="false"
+                android:text="Friday" />
+
+            <CheckBox
+                android:id="@+id/saturdayCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:layout_weight="0."
+                android:checked="false"
+                android:text="Saturday" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0." />
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="99dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:background="#634D72"
+                android:text="Search"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <TextView
+            android:id="@+id/clinicListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0."
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center_horizontal"
+            android:text="Results"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <ListView
+            android:id="@+id/clinicList"
+            android:layout_width="match_parent"
+            android:layout_height="257dp">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/clinicListTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0."
+            android:gravity="center_horizontal"
+            android:text="Select a Clinic by Pressing"
+            android:textColor="#000000" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:layout_weight="0." />
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#9AA4DA"
+            android:text="Back"
+            android:textColor="#FFFFFF" />
+
+
+        ></LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

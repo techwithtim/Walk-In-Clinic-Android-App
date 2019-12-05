@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center_horizontal"
+        android:text="Setting Working Hours/Days"
+        android:textColor="@color/places_autocomplete_prediction_primary_text"
+        android:textSize="22sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Set the working hours for the clinic by entering an opening and closing time for each day. To set a day as closed without removing it's regular hours use the toggle button. Use the format of HH:MM to set the time. You must set an opening and closing time for a day to be classified as open."
+        android:textColor="#000000" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#9AA4DA"
+        android:text="Close"
+        android:textColor="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="21dp" />
+</LinearLayout>

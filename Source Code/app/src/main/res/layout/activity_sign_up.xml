@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClick"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0."
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/configProfile"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="create an account"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                app:fontFamily="sans-serif-smallcaps" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="27dp" />
+
+            <EditText
+                android:id="@+id/addressField2"
+                android:layout_width="268dp"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="(Please enter a name)"
+                android:inputType="textPersonName"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/teamNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Name"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
+
+            <EditText
+                android:id="@+id/usernameField2"
+                android:layout_width="264dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="(Please enter a username)"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/emailTextField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Username"
+                android:textColor="#000000" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp" />
+
+            <EditText
+                android:id="@+id/passwordField2"
+                android:layout_width="264dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:hint="(Please enter a password)"
+                android:inputType="textPassword"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:gravity="center"
+                android:text="Password"
+                android:textColor="#000000" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="28dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/PatientRB"
+                    android:layout_width="172dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Patient"
+                    android:textSize="18sp"
+                    android:typeface="sans" />
+
+                <RadioButton
+                    android:id="@+id/EmployeeRB"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="Employee"
+                    android:textSize="18sp" />
+            </RadioGroup>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="38dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/createButton"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#634D72"
+            android:text="Create"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="23dp"
+            android:layout_weight="0." />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#9AA4DA"
+            android:text="Main Menu"
+            android:textColor="#FFF" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_weight="0." />
+
+    </LinearLayout>
+
+</RelativeLayout>

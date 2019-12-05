@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewServices">
+
+    <EditText
+        android:id="@+id/serviceNameTXT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter service:" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Performed By"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        />
+
+        <RadioButton
+            android:id="@+id/DoctorRB"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:checked="true"
+            android:gravity="center"
+            android:text="Doctor"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/NurseRB"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Nurse"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/StaffRB"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Staff"
+            android:textSize="18sp" /><![CDATA[
+
+
+
+
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+        ]]>
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/addBTN"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#634D72"
+        android:text="Add"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Services"
+
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/serviceList"
+        android:layout_width="match_parent"
+        android:layout_height="248dp">
+
+    </ListView>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Long Press to Edit a Service"
+        android:textColor="#000000" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="148dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:background="#9AA4DA"
+        android:gravity="center"
+        android:text="Back"
+        android:textColor="#FFF" />
+
+</LinearLayout>
+

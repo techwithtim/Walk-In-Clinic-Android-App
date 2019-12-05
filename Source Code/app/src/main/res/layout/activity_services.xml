@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewServices">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Clinic Services"
+
+        android:textAlignment="center"
+        android:textColor="@color/quantum_black_100"
+        android:textSize="26sp" />
+
+    <ListView
+        android:id="@+id/serviceList"
+        android:layout_width="match_parent"
+        android:layout_height="417dp">
+
+    </ListView>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Long Press to Delete a Service"
+        android:textColor="@color/common_google_signin_btn_text_light_pressed" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+
+    <Button
+        android:id="@+id/servicesBtn"
+        android:layout_width="148dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:background="#634D72"
+        android:gravity="center"
+        android:text="All Services"
+        android:textColor="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="148dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:background="#9AA4DA"
+        android:gravity="center"
+        android:text="Back"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
+

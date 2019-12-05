@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Type of Service: "
+
+        android:textAlignment="center"
+        android:textColor="@color/places_autocomplete_prediction_primary_text"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/updateService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter service:" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    />
+    <RadioButton
+        android:id="@+id/DoctorRB"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:checked="true"
+        android:gravity="center"
+        android:text="Doctor"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/NurseRB"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Nurse"
+        android:textSize="18sp" />
+
+    <RadioButton
+        android:id="@+id/StaffRB"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Staff"
+        android:textSize="18sp" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonUpdateService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/buttonDeleteService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

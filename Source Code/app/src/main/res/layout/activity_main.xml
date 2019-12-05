@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="411dp"
+            android:layout_height="78dp" />
+
+        <ImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="145dp"
+            android:layout_height="151dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/logo3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0."
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="walk in clinic"
+                android:textColor="#634D72"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-smallcaps" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="33dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/SignInButton"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#634D72"
+            android:text="Sign In"
+            android:textColor="@android:color/background_light" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="31dp" />
+
+        <Button
+            android:id="@+id/SignUpButton"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#9AA4DA"
+            android:text="Sign Up"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

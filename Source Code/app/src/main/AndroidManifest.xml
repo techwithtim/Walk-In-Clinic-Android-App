@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.final_project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo3"
+        android:label="Walk In Clinic Manager"
+        android:roundIcon="@drawable/logo3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PickTime"></activity>
+        <activity android:name=".PickDate" />
+        <activity android:name=".SpecificClinic" />
+        <activity android:name=".CheckIn" />
+        <activity android:name=".Appointment" />
+        <activity android:name=".EmployeeHours" />
+        <activity android:name=".AddServices" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Services" />
+        <activity android:name=".Hours" />
+        <activity android:name=".ViewServices" />
+        <activity android:name=".ViewUsers" />
+        <activity android:name=".EmployeeUser" />
+        <activity android:name=".PatientUser" />
+        <activity android:name=".Admin" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA0PXGeSi40iJj-i4uFn0vMSpuYY7LOPnU" />
+    </application>
+
+</manifest>
