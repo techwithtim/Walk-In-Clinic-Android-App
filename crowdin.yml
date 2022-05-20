@@ -1,0 +1,12 @@
+"project_id": "516942"                     #open project and go to Tools > API 
+"api_token": "7429c231d264b80857311326382e54cb70807e90db2adf28cd3a831d514de0fee9f4fbc8f7f0d300"          #open profile settings and go to API > New Token > create Token
+"base_path": "/Source Code"
+"base_url": "https://api.crowdin.com"
+"preserve_hierarchy": true
+
+"files": [
+  {
+    "source": "/Source Code/[0-2].txt",                                       #source files filter
+    "translation": "/Source Code/%two_letters_code%/folder1/%original_file_name%"        #where translations are stored
+  },
+]
