@@ -18,3 +18,17 @@ This project uses Google Firebase!
 
 ### Why Is Your Code So Bad??
 Ya about that... So everything that I did in this project I learned as I created it. I have never programmed an android app before and well let's just say you'll be able to tell. The project was not planned or designed very well before development began and therefore there is a lot of redundancy and just horribly written code. Not to mention this project did have a strict deadline and a lot of rules and regulations. Anyways I think it's pretty good for a first try at android development!
+
+
+# 💻 Launch Your Software Development Career Today!  
+
+🎓 **No degree? No problem!** My program equips you with everything you need to break into tech and land an entry-level software development role.  
+
+🚀 **Why Join?**  
+- 💼 **$70k+ starting salary potential**  
+- 🕐 **Self-paced:** Complete on your own time  
+- 🤑 **Affordable:** Low risk compared to expensive bootcamps or degrees
+- 🎯 **45,000+ job openings** in the market  
+
+👉 **[Start your journey today!](https://techwithtim.net/dev)**  
+No experience needed—just your determination. Future-proof your career and unlock six-figure potential like many of our students have!  
